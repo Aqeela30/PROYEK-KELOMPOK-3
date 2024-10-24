@@ -14,11 +14,10 @@ h1 {
   height: 30px;
 }
 
-p {
-  text-align: center;
-  font-family: Arial, sans-seri;
-  font-weight: normal;
-  color: black;
+h2 {
+   text-align: center;
+   height: 50px;
+   font-weight: 1000;
 }
 
 ul { 
@@ -36,9 +35,10 @@ li {
 img {
   display: block;
   margin: auto;
+  height: 10cm;
 }
 
-p.par2 {
-  color: red;
-  background-image: ./global.jpeg;
+p {
+  text-align: center;
 }
+
