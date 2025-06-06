@@ -1,3 +1,6 @@
+import tkinter as tk
+from tkinter import messagebox, scrolledtext
+import datetime
 
 
 # Fungsi untuk menyimpan catatan
