@@ -1,44 +1,70 @@
 /* Place your CSS styles in this file */
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-body {
-  background-color: babyblue;
-  border: 2px solid white;
-  border-radius: 10px;
-}
+    header {
+      background-color: #111;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.2rem;
+    }
 
-h1 {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  font-weight: normal;
-  color: blue;
-  height: 30px;
-}
+    header a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
 
-h2 {
-   text-align: center;
-   height: 50px;
-   font-weight: 1000;
-}
+    header a.active {
+      color: #e74c3c;
+    }
 
-ul { 
-  list-style-type: none;
-  background-color: aliceblue;
+    .team-section {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
 
-}
+    .team-section h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
 
-li {
-  Display: inline;
-  padding: 25px;
-}
+    .team-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
 
+    .team-card {
+      background-color: #222;
+      border: 2px solid #e74c3c;
+      border-radius: 10px;
+      width: 250px;
+      padding: 1rem;
+      text-align: center;
+    }
 
-img {
-  display: block;
-  margin: auto;
-  height: 10cm;
-}
+    .team-card img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 3px solid #e74c3c;
+    }
 
-p {
-  text-align: center;
-}
+    .team-card h2 {
+      color: #e74c3c;
+      margin: 1rem 0 0.5rem;
+    }
 
+    .team-card p {
+      font-size: 0.9rem;
+      margin: 0.5rem 0;
+    }
+ 
