@@ -1,27 +1,42 @@
-/* Place your CSS styles in this file */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CEPLUK</title>
+  <style>
     body {
-      background-color: #111;
-      color: #fff;
+      background-color: skyblue; /* Warna background */
+      color: #333;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: #111;
-      padding: 1rem;
+      background-color: #003366;
+      padding: 1rem 0;
       text-align: center;
-      font-size: 1.2rem;
     }
 
-    header a {
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
       color: #fff;
-      margin: 0 1rem;
       text-decoration: none;
+      font-weight: bold;
     }
 
-    header a.active {
-      color: #e74c3c;
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: yellow;
     }
 
     .team-section {
@@ -30,8 +45,14 @@
     }
 
     .team-section h1 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #002244;
+    }
+
+    .team-section h2, .team-section h3 {
+      color: #004488;
+      margin: 0.5rem 0;
     }
 
     .team-cards {
@@ -39,15 +60,17 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 2rem;
+      padding: 2rem 1rem;
     }
 
     .team-card {
-      background-color: #222;
-      border: 2px solid #e74c3c;
+      background-color: white;
+      border: 3px solid blue; /* Bingkai teks */
       border-radius: 10px;
       width: 250px;
       padding: 1rem;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     .team-card img {
@@ -55,11 +78,11 @@
       width: 120px;
       height: 120px;
       object-fit: cover;
-      border: 3px solid #e74c3c;
+      border: 4px solid blue; /* Bingkai foto */
     }
 
-    .team-card h2 {
-      color: #e74c3c;
+    .team-card h3 {
+      color: #003366;
       margin: 1rem 0 0.5rem;
     }
 
