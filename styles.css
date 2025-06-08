@@ -1,97 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CEPLUK</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-image: url('bg.jpg'); /* Ganti dengan nama file background kamu */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      color: #000;
-    }
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('bg.jpg'); /* Ganti dengan file background kamu */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000; /* default warna teks */
+  }
 
-    header {
-      padding: 1rem 0;
-      text-align: center;
-    }
+  header {
+    padding: 1rem 0;
+    text-align: center;
+  }
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 0;
-      margin: 0;
-    }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+  }
 
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-    nav ul li a:hover,
-    nav ul li a.active {
-      color: yellow;
-    }
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: yellow;
+  }
 
-    .team-section {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-color: rgba(255, 255, 255, 0.8);
-    }
+  .team-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #003366; /* Warna teks di section */
+  }
 
-    .team-section h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: #002244;
-    }
+  .team-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px #fff;
+  }
 
-    .team-section h2, .team-section h3 {
-      color: #004488;
-      margin: 0.5rem 0;
-    }
+  .team-section h2,
+  .team-section h3 {
+    margin: 0.5rem 0;
+    text-shadow: 1px 1px 2px #fff;
+  }
 
-    .team-cards {
-      display: flex;
-      flex-direction: column; /* Supaya 1 baris 1 kartu */
-      align-items: center;
-      gap: 2rem;
-      padding: 2rem 1rem;
-    }
+  .team-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
 
-    .team-card {
-      background-color: white;
-      border: 3px solid blue;
-      border-radius: 10px;
-      width: 90%;
-      max-width: 400px;
-      padding: 1rem;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
+  .team-card {
+    border: 3px solid blue;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #002244; /* Warna teks khusus untuk setiap card */
+  }
 
-    .team-card img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      border: 3px solid blue;
-      border-radius: 5px; /* Kotak, tapi tetap ada sedikit lengkungan */
-      margin-bottom: 1rem;
-    }
+  .team-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid blue;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
 
-    .team-card h3 {
-      color: #003366;
-      margin: 1rem 0 0.5rem;
-    }
+  .team-card h3 {
+    margin: 1rem 0 0.5rem;
+  }
 
-    .team-card p {
-      font-size: 0.95rem;
-      margin: 0.5rem 0;
-    }
+  .team-card p {
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+  }
+</style>
