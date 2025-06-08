@@ -6,15 +6,18 @@
   <title>CEPLUK</title>
   <style>
     body {
-      background-color: skyblue; /* Warna background */
-      color: #333;
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('bg.html.jpg'); /* Ganti dengan nama file background kamu */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #333;
     }
 
     header {
-      background-color: #003366;
+      background-color: rgba(0, 51, 102, 0.9);
       padding: 1rem 0;
       text-align: center;
     }
@@ -42,6 +45,7 @@
     .team-section {
       text-align: center;
       padding: 2rem 1rem;
+      background-color: rgba(255, 255, 255, 0.8);
     }
 
     .team-section h1 {
@@ -57,28 +61,30 @@
 
     .team-cards {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      flex-direction: column; /* Supaya 1 baris 1 kartu */
+      align-items: center;
       gap: 2rem;
       padding: 2rem 1rem;
     }
 
     .team-card {
       background-color: white;
-      border: 3px solid blue; /* Bingkai teks */
+      border: 3px solid blue;
       border-radius: 10px;
-      width: 250px;
+      width: 90%;
+      max-width: 400px;
       padding: 1rem;
       text-align: center;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     .team-card img {
-      border-radius: 50%;
-      width: 120px;
-      height: 120px;
+      width: 100%;
+      height: auto;
       object-fit: cover;
-      border: 4px solid blue; /* Bingkai foto */
+      border: 3px solid blue;
+      border-radius: 5px; /* Kotak, tapi tetap ada sedikit lengkungan */
+      margin-bottom: 1rem;
     }
 
     .team-card h3 {
@@ -87,7 +93,7 @@
     }
 
     .team-card p {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       margin: 0.5rem 0;
     }
   </style>
@@ -107,33 +113,42 @@
     <h1>CEPLUK</h1>
     <h2>About The Group</h2>
     <h3>Introduction Group</h3>
+
     <div class="team-cards">
       <div class="team-card">
         <img src="foto vinda.jpg" alt="Khodijah Juliavinda Baiqi" />
         <h3>Khodijah Juliavinda Baiqi</h3>
         <p><i>"Game Programmer."</i></p>
-        <p>This profession is responsible for creating video games, including programming, audio, graphic design, visual arts, and app production.</p>
+        <p>
+          Responsible for creating video games, including programming, design, audio, and more. Requires coding skills and artistic sense.
+        </p>
       </div>
 
       <div class="team-card">
         <img src="arifah.jpg" alt="Arifah Nasuha Oktavhia" />
         <h3>Arifah Nasuha Oktavhia</h3>
         <p><i>"Content Creator"</i></p>
-        <p>Understand IT concepts and the latest technology. Convey information clearly and interestingly. Create unique and interesting content.</p>
+        <p>
+          Creates engaging and informative tech content, edits media, and educates audiences through videos or articles.
+        </p>
       </div>
 
       <div class="team-card">
         <img src="thalita.jpg" alt="Talita Salsabila" />
         <h3>Talita Salsabila</h3>
-        <p><i>"Graphic Desain"</i></p>
-        <p>Responsible for creating attractive, communicative design based on needs or projects, including logos, website, and app visuals.</p>
+        <p><i>"Graphic Designer"</i></p>
+        <p>
+          Designs visual elements like logos, UI mockups, and more to support communication and branding objectives.
+        </p>
       </div>
 
       <div class="team-card">
         <img src="aqeela.jpg" alt="Aqeela Xabilla Nur Syifa" />
         <h3>Aqeela Xabilla Nur Syifa</h3>
         <p><i>"Web Programmer"</i></p>
-        <p>Creates and maintains websites using HTML, CSS, JavaScript, and other tools, ensures website functionality, security, and teamwork collaboration.</p>
+        <p>
+          Develops and maintains websites using HTML, CSS, JavaScript. Focuses on functionality, UI/UX, and security.
+        </p>
       </div>
     </div>
   </section>
