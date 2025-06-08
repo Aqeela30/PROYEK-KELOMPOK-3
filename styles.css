@@ -9,25 +9,22 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background-image: url('bg.jpg'); /* Ganti dengan file background kamu */
+      background-image: url('bg.jpg'); /* Ganti dengan background kamu */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       color: #000;
     }
 
-   header {
-  background-color: skyblue; /* bisa juga pakai 'deepskyblue' atau kode hex seperti #87CEEB */
-  padding: 1rem 0;
-  text-align: center;
-}
+    header {
+      background-color: skyblue;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
 
-.team-section h2,
-.team-section h3 {
-  color: #fff; /* Warna putih seperti permintaan */
-  margin: 0.5rem 0;
-  text-shadow: 1px 1px 2px #000;
-}
+    header h1 {
+      color: #ffffff; /* CEPLUK jadi putih */
+    }
 
     nav ul {
       list-style: none;
@@ -35,7 +32,7 @@
       justify-content: center;
       gap: 2rem;
       padding: 0;
-      margin: 0;
+      margin: 1rem 0 0;
     }
 
     nav ul li a {
@@ -54,18 +51,11 @@
       padding: 2rem 1rem;
     }
 
-    .team-section h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: #002244;
-      text-shadow: 1px 1px 2px #fff;
-    }
-
     .team-section h2,
     .team-section h3 {
-      color: #004488;
+      color: #ffffff; /* About & Intro Group jadi putih */
       margin: 0.5rem 0;
-      text-shadow: 1px 1px 2px #fff;
+      text-shadow: 1px 1px 2px #000;
     }
 
     .team-cards {
@@ -84,7 +74,7 @@
       padding: 1rem;
       text-align: center;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(5px); /* Efek transparansi tanpa warna background */
+      background-color: rgba(255, 255, 255, 0.85);
     }
 
     .team-card img {
@@ -97,11 +87,12 @@
     }
 
     .team-card h3 {
-      color: #003366;
+      color: #0056b3; /* Biru terang */
       margin: 1rem 0 0.5rem;
     }
 
     .team-card p {
       font-size: 0.95rem;
       margin: 0.5rem 0;
+      color: #003366; /* Biru terang juga */
     }
