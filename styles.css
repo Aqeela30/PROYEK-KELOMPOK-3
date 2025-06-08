@@ -6,15 +6,18 @@
   <title>CEPLUK</title>
   <style>
     body {
-      background-color: skyblue; /* Warna background */
-      color: #333;
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('bg.html.jpg'); /* Ganti dengan nama file background kamu */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #333;
     }
 
     header {
-      background-color: #003366;
+      background-color: rgba(0, 51, 102, 0.9);
       padding: 1rem 0;
       text-align: center;
     }
@@ -42,6 +45,7 @@
     .team-section {
       text-align: center;
       padding: 2rem 1rem;
+      background-color: rgba(255, 255, 255, 0.8);
     }
 
     .team-section h1 {
@@ -57,28 +61,30 @@
 
     .team-cards {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      flex-direction: column; /* Supaya 1 baris 1 kartu */
+      align-items: center;
       gap: 2rem;
       padding: 2rem 1rem;
     }
 
     .team-card {
       background-color: white;
-      border: 3px solid blue; /* Bingkai teks */
+      border: 3px solid blue;
       border-radius: 10px;
-      width: 250px;
+      width: 90%;
+      max-width: 400px;
       padding: 1rem;
       text-align: center;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     .team-card img {
-      border-radius: 50%;
-      width: 120px;
-      height: 120px;
+      width: 100%;
+      height: auto;
       object-fit: cover;
-      border: 4px solid blue; /* Bingkai foto */
+      border: 3px solid blue;
+      border-radius: 5px; /* Kotak, tapi tetap ada sedikit lengkungan */
+      margin-bottom: 1rem;
     }
 
     .team-card h3 {
@@ -87,7 +93,6 @@
     }
 
     .team-card p {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       margin: 0.5rem 0;
     }
- 
