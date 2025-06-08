@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>CEPLUK</title>
-    <style>
-      body {
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>CEPLUK</title>
+  <style>
+    body {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
@@ -27,7 +27,7 @@
       font-family: 'Times New Roman', Times, serif;
       font-size: 100px;
       color: black;
-      text-align: center;/* CEPLUK jadi putih */
+      text-align: center;
     }
 
     nav ul {
@@ -50,13 +50,38 @@
       color: yellow;
     }
 
+    /* Style untuk iframe */
+    iframe {
+      display: block;
+      margin: 40px auto;
+      width: 90%;
+      max-width: 1000px;
+      height: 600px;
+      border: 3px solid blue;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
 
+    .credits {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 1.1rem;
+    }
 
-    </style>
-  </head>
+    .credits a {
+      color: darkblue;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-  <body>
-    <header>
+    .credits a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
     <nav>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
@@ -64,17 +89,21 @@
         <li><a href="produk.html">Produk</a></li>
       </ul>
     </nav>
-</header>
-    <h1>CEPLUK</h1>
-   <iframe
-        loading="lazy"
-        src="https://www.canva.com/design/DAGpvu9I1dg/_nqvIp4wOLZ3tmMdsVH1kQ/view?embed"
-        allowfullscreen
-        allow="fullscreen">
-      </iframe>
-    </div>
+  </header>
 
-    <div class="credits">
-      <a href= "https://www.canva.com/design/DAGpvu9I1dg/L3_TFpivS52X2dStZ9bl3Q/edit?utm_content=DAGpvu9I1dg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">CEPLUK</a> by KELOMPOK 3
-  </body>
+  <h1>CEPLUK</h1>
+
+  <iframe
+    loading="lazy"
+    src="https://www.canva.com/design/DAGpvu9I1dg/_nqvIp4wOLZ3tmMdsVH1kQ/view?embed"
+    allowfullscreen
+    allow="fullscreen">
+  </iframe>
+
+  <div class="credits">
+    <a href="https://www.canva.com/design/DAGpvu9I1dg/L3_TFpivS52X2dStZ9bl3Q/edit?utm_content=DAGpvu9I1dg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+      CEPLUK
+    </a> by KELOMPOK 3
+  </div>
+</body>
 </html>
