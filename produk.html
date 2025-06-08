@@ -1,47 +1,121 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <title>CEPLUK</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #2d3e50;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 10px;
+      background-color: #1a252f;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #ffa726;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .colab-link {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 12px 20px;
+      background-color: #1a73e8;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .colab-link:hover {
+      background-color: #0f5ec7;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2d3e50;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.2em;
+      color: #666;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 
 <body>
-  <!-- EMBED CANVA -->
-  <div style="position: relative; width: 100%; height: 0; padding-top: 56.25%;
-    box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-    border-radius: 8px; will-change: transform;">
-    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
-      src="https://www.canva.com/design/DAGTCZvXMZA/f2NUzBj3-SCrLAhBehzgdw/view?embed" allowfullscreen allow="fullscreen">
-    </iframe>
+  <header>
+    <h1>CEPLUK</h1>
+    <p>Catatan Interaktif & Game Edukasi</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2 style="text-align: center;">📖 Program Catatan Harian</h2>
+    <p>Berikut adalah aplikasi catatan harian interaktif kelompok CEPLUK:</p>
+    
+    <!-- Embed Gradio -->
+    <iframe src="https://047603c2937af6a6c4.gradio.live" allow="fullscreen"></iframe>
+
+    <!-- Optional fallback link -->
+    <p style="text-align: center; margin-top: 20px;">
+      <a class="colab-link" href="https://047603c2937af6a6c4.gradio.live" target="_blank">
+        🔗 Buka di Tab Baru
+      </a>
+    </p>
   </div>
-  <a href="https://www.canva.com/design/DAGTCZvXMZA/f2NUzBj3-SCrLAhBehzgdw/view?utm_content=DAGTCZvXMZA&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">
-    KELOMPOK 10 MAP SCALING
-  </a>
-
-  <!-- MENU -->
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li>Contact</li>
-  </ul>
-
-  <h1>CEPLUK</h1>
-
-  <p>GAME</p>
-
-  <!-- EMBED GRADIO -->
-  <h2 style="text-align: center;">📖 Catatan Harian CEPLUK</h2>
-  <div style="position: relative; width: 100%; height: 600px; margin-top: 20px; margin-bottom: 40px;">
-    <iframe src="https://047603c2937af6a6c4.gradio.live" width="100%" height="100%" style="border: none;" allow="fullscreen"></iframe>
-  </div>
-
-  <!-- Optional: Link alternatif -->
-  <p style="text-align: center;">
-    <a href="https://047603c2937af6a6c4.gradio.live" target="_blank" style="color: #1a73e8; font-weight: bold;">
-      👉 Buka di tab baru (Catatan Harian)
-    </a>
-  </p>
 </body>
 </html>
