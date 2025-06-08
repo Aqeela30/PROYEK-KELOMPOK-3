@@ -1,56 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CEPLUK</title>
-  
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="desainproduk.html">Desain Produk</a></li>
-        <li><a href="produk.html">Produk</a></li>
-      </ul>
-    </nav>
-  </header>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('bg.jpg'); /* Ganti dengan file background kamu */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000; /* default warna teks */
+  }
 
-  <section class="team-section">
-    <h1>CEPLUK</h1>
-    <h2>About The Group</h2>
-    <h3>Introduction Group</h3>
+  header {
+    padding: 1rem 0;
+    text-align: center;
+  }
 
-    <div class="team-cards">
-      <div class="team-card">
-        <img src="vinvin.jpg" alt="Khodijah Juliavinda Baiqi" />
-        <h3>Khodijah Juliavinda Baiqi</h3>
-        <p><i>"Game Programmer."</i></p>
-        <p>Responsible for creating video games, including programming, design, audio, and more. Requires coding skills and artistic sense.</p>
-      </div>
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+  }
 
-      <div class="team-card">
-        <img src="arifah.jpg" alt="Arifah Nasuha Oktavhia" />
-        <h3>Arifah Nasuha Oktavhia</h3>
-        <p><i>"Content Creator"</i></p>
-        <p>Creates engaging and informative tech content, edits media, and educates audiences through videos or articles.</p>
-      </div>
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-      <div class="team-card">
-        <img src="thalita.jpg" alt="Talita Salsabila" />
-        <h3>Talita Salsabila</h3>
-        <p><i>"Graphic Designer"</i></p>
-        <p>Designs visual elements like logos, UI mockups, and more to support communication and branding objectives.</p>
-      </div>
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: yellow;
+  }
 
-      <div class="team-card">
-        <img src="aqeela.jpg" alt="Aqeela Xabilla Nur Syifa" />
-        <h3>Aqeela Xabilla Nur Syifa</h3>
-        <p><i>"Web Programmer"</i></p>
-        <p>Develops and maintains websites using HTML, CSS, JavaScript. Focuses on functionality, UI/UX, and security.</p>
-      </div>
-    </div>
-  </section>
-</body>
-</html>
+  .team-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #003366; /* Warna teks di section */
+  }
+
+  .team-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px #fff;
+  }
+
+  .team-section h2,
+  .team-section h3 {
+    margin: 0.5rem 0;
+    text-shadow: 1px 1px 2px #fff;
+  }
+
+  .team-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .team-card {
+    border: 3px solid blue;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #002244; /* Warna teks khusus untuk setiap card */
+  }
+
+  .team-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid blue;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+
+  .team-card h3 {
+    margin: 1rem 0 0.5rem;
+  }
+
+  .team-card p {
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+  }
+</style>
