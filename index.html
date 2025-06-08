@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
-    <title>CEPLUK</title>
-<style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>CEPLUK</title>
+  <style>
     body {
       background-color: #111;
       color: #fff;
@@ -14,41 +13,44 @@
       margin: 0;
       padding: 0;
     }
-
     header {
       background-color: #111;
-      padding: 1rem;
+      padding: 1rem 0;
       text-align: center;
       font-size: 1.2rem;
     }
-
-    header a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
     }
-
-    header a.active {
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
       color: #e74c3c;
     }
-
     .team-section {
       text-align: center;
       padding: 2rem 1rem;
     }
-
     .team-section h1 {
       font-size: 2rem;
       margin-bottom: 2rem;
     }
-
     .team-cards {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 2rem;
+      padding: 0 1rem 2rem;
     }
-
     .team-card {
       background-color: #222;
       border: 2px solid #e74c3c;
@@ -56,8 +58,8 @@
       width: 250px;
       padding: 1rem;
       text-align: center;
+      color: #fff;
     }
-
     .team-card img {
       border-radius: 50%;
       width: 120px;
@@ -65,65 +67,69 @@
       object-fit: cover;
       border: 3px solid #e74c3c;
     }
-
-    .team-card h2 {
+    .team-card h3 {
       color: #e74c3c;
       margin: 1rem 0 0.5rem;
     }
-
     .team-card p {
       font-size: 0.9rem;
       margin: 0.5rem 0;
     }
   </style>
 </head>
-  <body>
+<body>
   <header>
-    <li>Home</li>
-    <li><a href="about.html">Desain Produk</a></li>
-    <li><a href="contact.html">Produk</a></li>
-</header>
-  <selection class="team-selection">
-    <h1> CEPLUK </h1>
-    <h2> About The Group <h2/>
-<h2> Introduction Group <h2/>
-  <div class= "team-cards>
-    <div class="team-card">
-  <img src="foto vinda.jpg">
-    <h3>Khodijah Juliavinda Baiqi</h3>
-     <p><i>"Game Programmer."</i></p>
-<p>This profession is responsible for creating video games, including programming, audio, graphic design, visual arts, and app production. 
-Game developers also need to understand the concept of making applications, have coding and programming skills, and have a love for games and a sense of art.
-<p/>
-</div>
-<div class="team-card">
-<img src="arifah.jpg">
-<h3>Arifah Nasuha Oktavhia</h3>
- <p><i>"Content Creator"</i></p>
- <p>Understand IT concepts and the latest technology.
- Convey information clearly and interestingly.
-Create unique and interesting content.
-Edit video, graphics, or audio.
-Create videos or articles about how to use new software, programming, or technology.
- <p/>
-</div>
-<div class="team-card">
-<img src="thalita.jpg">
-<h3>Talita Salsabila</h3>
- <p><i>"Graphic Desain"</i></p>
-<p>
-Has a job and responsibility
-to create an attractive, communicative, and 
-within the needs or project. Designing Visual by creating graphic design such as logos, web page views and design from applications.
-<p/>
-</div>
-<div class="team-card">
-<img src="aqeela.jpg">
-<h3>Aqeela Xabilla Nur Syifa</h3>
- <p><i>"Web Programmer"</i></p>
-<p>A web programmer's tasks include creating, developing, and maintaining websites by writing code (HTML, CSS, JavaScript, etc.), managing databases, testing and fixing bugs, ensuring security, and collaborating with the team to ensure the website functions according to requirements.
-<p/>
-</div>
-</div>
-  </body>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="proses-design.html">Desain Produk</a></li>
+        <li><a href="produk.html">Produk</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="team-section">
+    <h1>CEPLUK</h1>
+    <h2>About The Group</h2>
+    <h3>Introduction Group</h3>
+    <div class="team-cards">
+      <div class="team-card">
+        <img src="foto vinda.jpg" alt="Khodijah Juliavinda Baiqi" />
+        <h3>Khodijah Juliavinda Baiqi</h3>
+        <p><i>"Game Programmer."</i></p>
+        <p>
+          This profession is responsible for creating video games, including programming, audio, graphic design, visual arts, and app production.
+          Game developers also need to understand the concept of making applications, have coding and programming skills, and have a love for games and a sense of art.
+        </p>
+      </div>
+      <div class="team-card">
+        <img src="arifah.jpg" alt="Arifah Nasuha Oktavhia" />
+        <h3>Arifah Nasuha Oktavhia</h3>
+        <p><i>"Content Creator"</i></p>
+        <p>
+          Understand IT concepts and the latest technology. Convey information clearly and interestingly.
+          Create unique and interesting content. Edit video, graphics, or audio.
+          Create videos or articles about how to use new software, programming, or technology.
+        </p>
+      </div>
+      <div class="team-card">
+        <img src="thalita.jpg" alt="Talita Salsabila" />
+        <h3>Talita Salsabila</h3>
+        <p><i>"Graphic Desain"</i></p>
+        <p>
+          Has a job and responsibility to create an attractive, communicative, and within the needs or project.
+          Designing Visual by creating graphic design such as logos, web page views and design from applications.
+        </p>
+      </div>
+      <div class="team-card">
+        <img src="aqeela.jpg" alt="Aqeela Xabilla Nur Syifa" />
+        <h3>Aqeela Xabilla Nur Syifa</h3>
+        <p><i>"Web Programmer"</i></p>
+        <p>
+          A web programmer's tasks include creating, developing, and maintaining websites by writing code (HTML, CSS, JavaScript, etc.), managing databases, testing and fixing bugs, ensuring security, and collaborating with the team to ensure the website functions according to requirements.
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
 </html>
