@@ -16,10 +16,19 @@
       color: #000;
     }
 
-    header {
-      background-color:blue
-      padding: 1rem 0;
-      text-align: center;
+   header {
+  background-color: skyblue; /* bisa juga pakai 'deepskyblue' atau kode hex seperti #87CEEB */
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.team-section h2,
+.team-section h3 {
+  color: #fff; /* Warna putih seperti permintaan */
+  margin: 0.5rem 0;
+  text-shadow: 1px 1px 2px #000;
+}
+
     }
 
     nav ul {
