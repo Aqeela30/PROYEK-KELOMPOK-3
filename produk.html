@@ -6,19 +6,28 @@
   <link rel="stylesheet" href="styles.css" />
   <title>CEPLUK</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      body {
       margin: 0;
       padding: 0;
-      background-color: #f4f6f8;
-      color: #333;
+      font-family: Arial, sans-serif;
+      background-image: url('BG.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #000;
     }
 
     header {
-      background-color: #2d3e50;
-      padding: 20px;
+      background-color: skyblue;
+      padding: 1.3rem 0;
       text-align: center;
-      color: white;
+    }
+
+    h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 100px;
+      color: black;
+      text-align: center;/* CEPLUK jadi putih */
     }
 
     nav ul {
@@ -91,17 +100,17 @@
 
 <body>
   <header>
+    <nav>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="desainproduk.html">Desain Produk</a></li>
+        <li><a href="produk.html">Produk</a></li>
+     </ul>
+  </nav>
+    </header>
     <h1>CEPLUK</h1>
     <p>Catatan Interaktif & Game Edukasi</p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+  
 
   <div class="container">
     <h2 style="text-align: center;">📖 Program Catatan Harian</h2>
