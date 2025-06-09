@@ -89,6 +89,26 @@
       margin-bottom: 1rem;
     }
 
+    /* Gaya ketika aktif / diklik */
+    .team-card.active img {
+      transform: translateX(50px) scale(1.1);
+    }
+
+    /* Kata-kata yang muncul saat klik */
+    .team-card .caption {
+      color: #003366;
+      font-style: italic;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      display: none;
+    }
+
+    .team-card.active .caption {
+      display: block;
+    }
+
+
     .team-card h3 {
       color: #0056b3; /* Biru terang */
       margin: 1rem 0 0.5rem;
