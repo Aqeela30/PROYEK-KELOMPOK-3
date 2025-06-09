@@ -26,7 +26,7 @@
       font-family: 'Times New Roman', Times, serif;
       font-size: 100px;
       color: #ffffff;
-      text-align: center;/* CEPLUK jadi putih */
+      text-align: center;
     }
 
     nav ul {
@@ -56,7 +56,7 @@
 
     .team-section h2,
     .team-section h3 {
-      color: #ffffff; /* About & Intro Group jadi putih */
+      color: #ffffff;
       margin: 0.5rem 0;
       text-shadow: 1px 1px 2px #000;
     }
@@ -78,6 +78,8 @@
       text-align: center;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       background-color: rgba(255, 255, 255, 0.85);
+      position: relative;
+      cursor: pointer;
     }
 
     .team-card img {
@@ -87,21 +89,43 @@
       border: 3px solid blue;
       border-radius: 5px;
       margin-bottom: 1rem;
+      transition: transform 0.5s ease;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Gaya ketika aktif / diklik */
+    .team-card.active img {
+      transform: translateX(50px) scale(1.1);
+    }
+
+    /* Kata-kata yang muncul saat klik */
+    .team-card .caption {
+      color: #003366;
+      font-style: italic;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      display: none;
+    }
+
+    .team-card.active .caption {
+      display: block;
     }
 
     .team-card h3 {
-      color: #0056b3; /* Biru terang */
+      color: #0056b3;
       margin: 1rem 0 0.5rem;
     }
 
     .team-card p {
       font-size: 0.95rem;
       margin: 0.5rem 0;
-      color: #003366; /* Biru terang juga */
+      color: #003366;
     }
   </style>
 </head>
-<body>
 <body>
   <!-- Musik background -->
   <audio autoplay loop>
@@ -125,30 +149,33 @@
     <h3>Introduction Group</h3>
 
     <div class="team-cards">
-      <div class="team-card">
+      <div class="team-card" tabindex="0">
         <img src="vinvin.jpg" alt="Khodijah Juliavinda Baiqi" />
+        <p class="caption">Khodijah pacar mark lee</p>
         <h3>Khodijah Juliavinda Baiqi</h3>
         <p><i>"Web Programmer."</i></p>
         <p>Develops and maintains websites using HTML, CSS, Python. Focuses on functionality, UI/UX, and security</p>
       </div>
 
-      <div class="team-card">
+      <div class="team-card" tabindex="0">
         <img src="talita.jpg" alt="Talita Salsabila" />
+        <p class="caption">Foto Talita sedang bergerak!</p>
         <h3>Talita Salsabila</h3>
         <p><i>"Game Programmer"</i></p>
         <p>Responsible for creating video games, including programming, design, audio, and more. Requires coding skills and artistic sense.</p>
       </div>
      
-      <div class="team-card">
+      <div class="team-card" tabindex="0">
         <img src="arifah.jpg" alt="Arifah Nasuha Oktavhia" />
+        <p class="caption">Foto Arifah sedang bergerak!</p>
         <h3>Arifah Nasuha Oktavhia</h3>
         <p><i>"Content Creator"</i></p>
         <p>Creates engaging and informative tech content, edits media, and educates audiences through videos or articles.</p>
       </div>
 
-
-      <div class="team-card">
+      <div class="team-card" tabindex="0">
         <img src="aqeela.jpg" alt="Aqeela Xabilla Nur Syifa" />
+        <p class="caption">Foto Aqeela sedang bergerak!</p>
         <h3>Aqeela Xabilla Nur Syifa</h3>
         <p><i>"Graphic Designer"</i></p>
         <p>Designs visual elements like logos, UI mockups, and more to support communication and branding objectives.</p>
@@ -156,5 +183,16 @@
     </div>
   </section>
 
+  <script>
+    // Tangkap semua team-card
+    const cards = document.querySelectorAll('.team-card');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        // Toggle class active untuk efek gerak dan tampilkan caption
+        card.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
